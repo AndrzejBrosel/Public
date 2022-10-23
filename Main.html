@@ -1,0 +1,48 @@
+#Stepik mazafaken calculator 1.12 (3) Программирование на Python
+
+a = float(input())
+c = float(input())
+b = input()
+
+if b == '*':
+    print(a*c)
+if b == '-':
+    print(a-c)
+if b == '+':
+    print(a+c)
+if b == '/' and c == 0:
+    print('Деление на 0!')
+elif b == '/':
+    print(a/c)
+if b == 'mod' and c==0:
+    print('Деление на 0!')
+elif b == 'mod':
+    print(a%c)
+if b == 'div' and c==0:
+    print('Деление на 0!')
+elif b == 'div':
+    print(a//c)
+if b =='pow':
+    print(a**c)
+
+
+
+################ # OR
+
+
+a = float(input())
+b = float(input())
+act = input()
+
+if (act=="/" or act=="mod" or act=="div") and b==0:
+    c = "Деление на 0!"
+elif act=="+":    c = a + b
+elif act=="-":    c = a - b
+elif act=="/":    c = a / b
+elif act=="*":    c = a * b
+elif act=="mod":  c = a % b
+elif act=="pow":  c = a ** b
+elif act=="div":  c = a // b
+
+print (c)
+
